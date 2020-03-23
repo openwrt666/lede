@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: Test
+name: 
 
 on:
   push:
@@ -99,9 +99,9 @@ jobs:
 
           # 编译x64固件:
           # cat >> .config <<EOF
-          CONFIG_TARGET_brcm2708=y
-          CONFIG_TARGET_brcm2708_bcm2710=y
-          CONFIG_TARGET_brcm2708_bcm2710_DEVICE_rpi-3=y
+          CONFIG_TARGET_brcm27xx=y
+          CONFIG_TARGET_brcm27xx_bcm2710=y
+          CONFIG_TARGET_brcm27xx_bcm2710_DEVICE_rpi-3=y
           EOF
 
           # 固件压缩:
@@ -156,6 +156,8 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
           CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-app-v2ray-server=y
           CONFIG_PACKAGE_luci-app-verysync=y
@@ -168,6 +170,7 @@ jobs:
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-theme-argon=y
           CONFIG_PACKAGE_luci-theme-netgear=y
+          CONFIG_PACKAGE_luci-theme-material=y
           EOF
 
           # 常用软件包:
