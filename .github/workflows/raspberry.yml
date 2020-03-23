@@ -98,7 +98,7 @@ jobs:
           # 
 
           # 编译x64固件:
-          # cat >> .config <<EOF
+          cat >> .config <<EOF
           CONFIG_TARGET_brcm27xx=y
           CONFIG_TARGET_brcm27xx_bcm2710=y
           CONFIG_TARGET_brcm27xx_bcm2710_DEVICE_rpi-3=y
