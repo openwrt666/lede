@@ -122,10 +122,10 @@ jobs:
 
           # 多文件系统支持:
           cat >> .config <<EOF
-          CONFIG_PACKAGE_kmod-fs-nfs=y
-          CONFIG_PACKAGE_kmod-fs-nfs-common=y
-          CONFIG_PACKAGE_kmod-fs-nfs-v3=y
-          CONFIG_PACKAGE_kmod-fs-nfs-v4=y
+          # CONFIG_PACKAGE_kmod-fs-nfs=y
+          # CONFIG_PACKAGE_kmod-fs-nfs-common=y
+          # CONFIG_PACKAGE_kmod-fs-nfs-v3=y
+          # CONFIG_PACKAGE_kmod-fs-nfs-v4=y
           # CONFIG_PACKAGE_kmod-fs-ntfs=y
           CONFIG_PACKAGE_kmod-fs-squashfs=y
           EOF
@@ -169,12 +169,12 @@ jobs:
           # LuCI主题:
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-theme-argon=y
-          CONFIG_PACKAGE_luci-theme-netgear=y
+          # CONFIG_PACKAGE_luci-theme-netgear=y
           EOF
 
           # 常用软件包:
           cat >> .config <<EOF
-          CONFIG_PACKAGE_curl=y
+          # CONFIG_PACKAGE_curl=y
           # CONFIG_PACKAGE_htop=y
           # CONFIG_PACKAGE_nano=y
           # CONFIG_PACKAGE_screen=y
@@ -220,5 +220,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@master
         with:
-          name: OpenWrt firmware
+          name: mt76x8-binary
           path: ./bin/targets/          
