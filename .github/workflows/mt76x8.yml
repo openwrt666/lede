@@ -126,7 +126,7 @@ jobs:
           CONFIG_PACKAGE_kmod-fs-nfs-common=y
           CONFIG_PACKAGE_kmod-fs-nfs-v3=y
           CONFIG_PACKAGE_kmod-fs-nfs-v4=y
-          CONFIG_PACKAGE_kmod-fs-ntfs=y
+          # CONFIG_PACKAGE_kmod-fs-ntfs=y
           CONFIG_PACKAGE_kmod-fs-squashfs=y
           EOF
 
@@ -158,11 +158,11 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_plugin=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
-          CONFIG_PACKAGE_luci-app-ttyd=y
+          # CONFIG_PACKAGE_luci-app-ttyd=y
           # CONFIG_PACKAGE_luci-app-v2ray-server=y
           # CONFIG_PACKAGE_luci-app-verysync=y
           CONFIG_PACKAGE_luci-app-webadmin=y
-          CONFIG_PACKAGE_luci-app-wireguard=y
+          # CONFIG_PACKAGE_luci-app-wireguard=y
           # CONFIG_PACKAGE_luci-app-wrtbwmon=y
           EOF
 
