@@ -23,6 +23,6 @@ jobs:
 
     steps:
       - name: ubuntu-version
-      - run: |
+        run: |
           df -h
           uname 
