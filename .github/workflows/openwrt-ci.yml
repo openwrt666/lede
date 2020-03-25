@@ -10,8 +10,8 @@
 name: OpenWrt-CI
 
 on:
-  watch:
-    types: [started]
+  release:
+    types: [published]
   # schedule:
   #   - cron: 0 20 * * *
 
