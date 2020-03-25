@@ -25,4 +25,4 @@ jobs:
       - name: ubuntu-version
         run: |
           df -h
-          uname 
+          uname -a
