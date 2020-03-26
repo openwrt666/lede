@@ -103,7 +103,8 @@ jobs:
           cat >> .config <<EOF
           CONFIG_TARGET_ramips=y
           CONFIG_TARGET_ramips_mt76x8=y
-          CONFIG_TARGET_ramips_mt76x8_DEVICE_mediatek_mt7628an-eval-board=y
+          # CONFIG_TARGET_ramips_mt76x8_DEVICE_mediatek_mt7628an-eval-board=y
+          CONFIG_TARGET_ramips_mt76x8_DEVICE_hilink_hlk-7628n=y
           EOF
 
           # 固件压缩:
