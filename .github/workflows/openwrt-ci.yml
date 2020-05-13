@@ -11,7 +11,7 @@ name: OpenWrt-CI
 
 on:
   release:
-    types: [published]
+   types: [published]
   # schedule:
   #   - cron: 0 20 * * *
 
@@ -25,4 +25,5 @@ jobs:
       - name: ubuntu-version
         run: |
           df -h
+          uname -a
           uname -a
