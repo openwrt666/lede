@@ -3,6 +3,7 @@
 .*.swp
 /env
 /dl
+/.github
 /.config
 /.config.old
 /bin
