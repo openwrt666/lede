@@ -17,9 +17,10 @@ on:
 
 jobs:
 
-  build:
+  build_openwrt:
 
-    runs-on: ubuntu-latest
+    name: Build OpenWrt and release
+    runs-on: ubuntu-18.04
 
     steps:
       - name: ubuntu-version
